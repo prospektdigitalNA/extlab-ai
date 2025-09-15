@@ -16,6 +16,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "EXTLAB",
   description: "ExtLab - Your AI-powered development platform",
+  // Trigger new deployment
 };
 
 export default function RootLayout({
