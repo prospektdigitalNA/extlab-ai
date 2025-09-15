@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import Link from "next/link";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -32,31 +33,31 @@ export default function RootLayout({
             <div className="flex justify-between items-center h-16">
               {/* Logo */}
               <div className="flex-shrink-0">
-                <a href="/" className="text-2xl font-bold text-gray-900 dark:text-white">
+                <Link href="/" className="text-2xl font-bold text-gray-900 dark:text-white">
                   EXTLAB
-                </a>
+                </Link>
               </div>
               
               {/* Navigation Links */}
               <div className="hidden md:block">
                 <div className="ml-10 flex items-baseline space-x-4">
-                  <a
+                  <Link
                     href="/docs"
                     className="text-gray-700 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors"
                   >
                     Docs
-                  </a>
+                  </Link>
                 </div>
               </div>
               
               {/* Sign In Button */}
               <div className="flex items-center">
-                <a
+                <Link
                   href="/signin"
                   className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md text-sm font-medium transition-colors"
                 >
                   Sign in
-                </a>
+                </Link>
               </div>
             </div>
           </div>
